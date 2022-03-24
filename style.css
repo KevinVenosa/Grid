@@ -1,0 +1,21 @@
+.grid-container {
+display: grid;
+width: 50%;
+margin: auto ;
+}
+.grid-container_element{
+    background-color: aqua;
+    border: solid 1px red;
+    padding: 5px;
+}
+
+.grid-container{
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-columns: [inicio] 100px [linea2] 100px [linea3] auto [fin];
+    grid-template-rows: [r-start] 100px [r-end] 30px [rline-3] 50px [r-fin]; 
+    gap: 10px;
+
+}
